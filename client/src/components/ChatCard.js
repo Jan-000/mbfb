@@ -7,7 +7,7 @@ export default function ChatCard({message, author }) {
 	return (
 		<div>
 			<br></br>
-			{author } wrote:
+			{author } wrote as follows:
             <div>
                 {message}
             </div>

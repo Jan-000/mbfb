@@ -12,8 +12,8 @@ export default function Home() {
 
 
 	return (
-	<> {user ?  <p>You are logged as:  {user.email}<br></br>this is redeployment #4
-		</p> : <p>You are not logged in</p>
+	<> {user ?  <p>You logged as:  {user.email}<br></br>this is redeployment #4
+		</p> : <p>Unlogged in</p>
 		}
 		</>
 
