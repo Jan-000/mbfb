@@ -139,7 +139,7 @@ console.log("this is group.guests", group?.guests)
 							<p> - {guest.name}</p>
 						)
 					 })}
-
+						<p>marker for GroupDetails.js page</p>
 					 </div>
 				</>
 			}
@@ -155,7 +155,7 @@ console.log("this is group.guests", group?.guests)
 					{!joinButtonValidation && <button className='groupdetails-btn' onClick={leaveGroup}>Leave this group</button>}
 
 
-			
+			{/* chat */}
 			<h3>Message Board</h3>
 			
 		    
@@ -186,65 +186,3 @@ console.log("this is group.guests", group?.guests)
 		</>
 	)
 }
-
-
-// 	return (
-// 		<>
-// 			{group === null ? <div>Loading ...</div> :
-// 				<>
-// 					<div className='group-details'>
-// 						{console.log(group)}
-// 						<h1>GroupDetails</h1>
-// 						<p>start station: {group.startStation}</p>
-// 						<p>end station : {group.endStation}</p>
-// 						<p>date : {group.date}</p>
-// 						<p>You're travelling with :</p>
-// 						<p>current price is: {group.prices[group.numOfGuests]}</p>
-// 						{group.guests.map(guest => {
-// 							return (
-// 								<p>{guest.name}</p>
-// 							)
-// 						})}
-// 						<p>here is page GroupDetails.js and {user._id}, {group.owner}</p>
-// 					</div>
-// 				</>
-// 			}
-// 			<>
-
-// 			{editButtonValidation && <Link to={`/groups/edit/${group._id}`}>
-// 					<button className='groupdetails-btn'>Edit this group</button>
-// 				</Link>}
-// 				{joinButtonValidation && <button className='groupdetails-btn' onClick={joinGroup}>Join this group</button>
-// 				}
-// 				{!joinButtonValidation && <button className='groupdetails-btn' onClick={leaveGroup}>Leave this group</button>}
-
-// 				<h3 className='message-title'>Message Board</h3>
-
-
-// 				{chat === null ? <div>Loading ...</div> :
-// 					<>
-
-// 						<div className='group-details'>
-							
-// 						{chat.messages.map(
-// 						chatMessage => <ChatCard key=
-// 						{chatMessage._id}
-// 						 {...chatMessage} />)
-// 						}
-// 						</div>
-// 				<form onSubmit={handleSubmit}>
-// 					<label htmlFor="message">Your message</label>
-// 					<br></br>
-// 					<textarea value={message} onChange={handleMessage} id="message" name="message" rows="4" cols="50"
-// 						placeholder="use this field for additional information: meeting point, schedule, questions">
-// 					</textarea>
-// 					<br></br>
-// 					<button id='message-btn' type="submit">Submit</button>
-// 				</form>
-
-
-
-// 			</>}
-// 		</>
-// 	)
-// }

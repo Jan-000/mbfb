@@ -8,6 +8,7 @@ export default function AddGroup(props) {
 	const [startStation, setStartStation] = useState('');
 	const [endStation, setEndStation] = useState('');
 	const [date, setDate] = useState('');
+	const [ownerEmail, setOwnerEmail]= useState("")
 	const { user } = useContext(AuthContext)
 	
 	const storedToken = localStorage.getItem('authToken')
@@ -17,7 +18,8 @@ export default function AddGroup(props) {
 		// the backend
 		const owner=user._id
 		const ownerName = user.name
-		axios.post('/api/groups', { startStation, endStation, date, owner, ownerName }, { headers: { Authorization: `Bearer ${storedToken}` } })
+		const ownerEmail = user.email
+		axios.post('/api/groups', { startStation, endStation, date, owner, ownerName, ownerEmail }, { headers: { Authorization: `Bearer ${storedToken}` } })
 
 			.then(response => {
 				console.log(response)
@@ -62,6 +64,8 @@ export default function AddGroup(props) {
 					value={date}
 					onChange={e => setDate(e.target.value)}
 				/>
+
+
 				<div>
 				<button id='submit-btn' type="submit">Add this ride</button>
 				</div>

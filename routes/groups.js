@@ -16,10 +16,22 @@ router.get('/groups', (req, res, next) => {
     .catch(err => next(err))
 });
 
+// get all the groups
+router.get('/groupex', (req, res, next) => {
+  Group.find()
+
+console.log("xD")
+    .populate("guests")
+    .then(groups => {
+      res.status(200).json(groups)
+    })
+    .catch(err => next(err))
+});
+
 // create a group
 router.post('/', (req, res, next) => {
-  const { startStation, endStation, date, owner, ownerName } = req.body
-  Group.create({ startStation, endStation, date, owner, ownerName})
+  const { startStation, endStation, date, owner, ownerName, ownerEmail } = req.body
+  Group.create({ startStation, endStation, date, owner, ownerName, ownerEmail})
     .then(group => {
       res.status(201).json(group)
     })
@@ -81,7 +93,7 @@ router.get('/user/:id', (req, res, next) => {
     })
 });
 
-//
+//joining group
 router.put("/joingroup/:id", (req, res, next) => {
 const user = req.body.user
 const id = req.params.id;

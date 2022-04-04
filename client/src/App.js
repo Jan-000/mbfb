@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
 import GroupList from './pages/GroupList';
+import GroupListt from './pages/GroupsByOwner';
 import GroupDetails from './pages/GroupDetails';
 import EditGroups from './pages/EditGroup';
 import Signup from './pages/Signup';
@@ -10,6 +11,7 @@ import Navbar from './components/Navbar';
 import ProtectedRoute from './components/ProtectedRoute';
 import UserProfile from './components/UserProfile';
 import HomeView from './components/HomeView'
+import SamplePageView from './components/SamplePageView';
 
 
 import SearchGroup from './components/SearchGroup';
@@ -29,12 +31,20 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomeView />} />
+        <Route path='/xD' element={<SamplePageView />} />
 
         <Route
           path='/groups'
           element={
             <ProtectedRoute redirectTo='/login'>
               <GroupList />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path='/groupex'
+          element={<ProtectedRoute redirectTo='/login'>
+              <GroupListt />
             </ProtectedRoute>
           }
         />

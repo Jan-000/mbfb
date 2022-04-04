@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useContext } from 'react'
 import axios from 'axios';
 import GroupCard from '../components/GroupCard';
-import AddGroup from '../components/AddGroup';
+//import AddGroup from '../components/AddGroup';
 import GoToSearch from '../components/GoToSearch'
 import { AuthContext } from '../context/auth';
 
 
 
-export default function GroupList() {
+export default function GroupListt() {
 
 	const [groups, setGroups] = useState([])
 	const { user } = useContext(AuthContext)
@@ -29,16 +29,15 @@ export default function GroupList() {
 			})
 	}
 	let ownedGroups = groups.filter((group) => {
-		if (group.owner === user._id) return true
-		else return false
-	})
 
-	let joinedGroups = groups.filter((group) => {
-		for (let i = 0; i < group.guests.length; i++) {
-			if (group.guests[i]._id === user._id) return true
-		}
-		return false
-	})
+		if (group.owner === "") {
+			return true}
+		else {
+		return false}
+	} )
+	console.log("owned groups are", ownedGroups)
+
+	
 
 	useEffect(() => {
 		getAllGroups()
@@ -47,20 +46,13 @@ export default function GroupList() {
 	return (
 		<>
 			<div className='created-groups'>
-				<h3>Groups you, {user.name}, created</h3>
+				<h3>Groups created by maybe {user.name}</h3>
 				{ownedGroups.map(group => <GroupCard key={group._id} {...group} />)}
 			</div>
 
-			<div className='joined-groups'>
-				<h3>Groups you joined</h3>
-				{joinedGroups.map(group => <GroupCard key={group._id} {...group} />)}
-			</div>
-			<p> marker for GroupList.js</p>
-
-			<AddGroup refreshGroups={getAllGroups} />
-
-
+			{/* <AddGroup refreshGroups={getAllGroups} /> */}
 			<GoToSearch />
+			<p>test marker</p>
 		</>
 	)
 }

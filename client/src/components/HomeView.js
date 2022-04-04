@@ -6,60 +6,34 @@ export default function HomeView() {
     <div className='home-view' >
         <Home />
         <article>
-            <h2 className='mitBahn-greet'>Welcome to mitBahn</h2>
-            <p className='mitBahn-greet-text'>The app that will help you travel cheap in Germany with the Quer-durchs-Land-Ticket. Let us present some of the benefits.</p>
+            <h2>Welcome to MitBahn</h2>
+            <p className='mitBahn-greet-text'>MitBahn allows you to make a full use of DB Group Ticket. <br></br> You can either join an existing ride ( = group of people on the same train), or propose your own. <br></br>The bigger the group, the cheaper the ride.</p>
             <article>
-                <h3>Eco friendly</h3>
-                <p>
-                The train                
-                </p>
+                <h3>Reasonably priced</h3>
+                
                 <figure>
-                    <img  width="50%" alt="emissions" src="emissions.jpeg"></img>
-                    <figcaption>Comparison of emissions among vehicles.</figcaption>
+
+                    <img  width="50%" alt="emissions" src="pricing.jpeg"></img>
+                    {/* <figcaption>Comparison of emissions among vehicles.</figcaption> */}
                 </figure>
                 
                 <hr></hr>
             </article>
             <article>
-                <h3>Connecting</h3>
-                <p>
-                    Even for                     
-                </p>
+                <h3>Rolling office</h3>
                 <figure>
                     <img width="50%" alt="romance" src="traintravel.webp"></img>
-                    <figcaption>Always out of range.</figcaption>
+                    {/* <figcaption>Always out of range.</figcaption> */}
                 </figure>
 
                 <hr></hr>
             </article>
-            <article>
-                <h3>Relaxed</h3>
-                <p>
-                    Ever drove a car over long distances while passengers annoyed the **** out of you?
-                </p>
-                <figure>
-                    <img width="50%" alt="angry" src="angrydude.jpg"></img>
-                    <figcaption>U mad bro?</figcaption>
-                </figure>
-
-                <hr></hr>
-            </article>
-            <article>
-                <h3>Cheap</h3>
-                <p>Not much to say about this. Money always speaks for itself.</p>
-                <figure>
-                    <img width="50%" alt="prices" src="prices.png"></img>
-                    <figcaption>Prices as of Feb.2022</figcaption>
-                </figure>
-
-                <hr></hr>
-            </article>
+           
             <article>
                 <h2>So take a seat and let's have a ride.</h2>
                 <figure>
-               
                     <img width="50%" alt="yea" src="train.gif"></img>
-                    <figcaption>Yeehaw</figcaption>
+                    <figcaption>Yeehaw!</figcaption>
                 </figure>
             </article>
         </article>

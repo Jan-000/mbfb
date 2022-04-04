@@ -10,6 +10,7 @@ const groupSchema = new Schema({
 	date: String,
 	maxPassengers: Number,
 	ownerName : String,
+	ownerEmail: String,
 	owner: {
 		type: Schema.Types.ObjectId,
 		ref: User,

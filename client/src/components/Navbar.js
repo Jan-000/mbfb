@@ -8,8 +8,7 @@ export default function Navbar() {
 	return (
 		<nav className="nav">
 			<div className="nav-left">
-		<img id="brand-logo" src="/mitBahn-logo.png" alt="brand logo"/>
-		<img id="brand-text" src="/mitBahnTexttrans.png" alt="brand-text" />
+		<img id="brand-logo" src="/logo.png" alt="brand logo"/>
 			</div>
 			<Link to="/">
 				<button className="btn">Home</button>
