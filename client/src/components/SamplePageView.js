@@ -8,7 +8,7 @@ export default function SamplePageView() {
         <article>
             
            
-        Bake z Was
+        Bake
 
         </article>
     </div>

@@ -13,7 +13,7 @@ export default function GroupCard({ _id, startStation, endStation, numOfGuests, 
 					</p>
 					<p className='to'>
 					To: { endStation }</p>
-					<p>created by : { ownerEmail }</p>
+					<p>Created by : { ownerEmail }</p>
 				</div>
 				<div className='group-bar'>
 					<img alt = 'status' src = {`/${numOfGuests}.png`}/>
