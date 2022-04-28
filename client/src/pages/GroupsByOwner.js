@@ -49,10 +49,16 @@ export default function GroupListt() {
 				<h3>Groups created by maybe {user.name}</h3>
 				{ownedGroups.map(group => <GroupCard key={group._id} {...group} />)}
 			</div>
+			<div>
+			{
+			ownedGroups.map((group) => (
+          <GroupCard key={group._id} {...group} />
+        ))}
+			</div>
 
 			{/* <AddGroup refreshGroups={getAllGroups} /> */}
 			<GoToSearch />
-			<p>test marker</p>
+			<p class="marker">test marker</p>
 		</>
 	)
 }

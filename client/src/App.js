@@ -12,6 +12,8 @@ import ProtectedRoute from './components/ProtectedRoute';
 import UserProfile from './components/UserProfile';
 import HomeView from './components/HomeView'
 import SamplePageView from './components/SamplePageView';
+import PricingView from './components/PricingView';
+
 
 
 import SearchGroup from './components/SearchGroup';
@@ -28,9 +30,9 @@ function App() {
       <Navbar />
     <div className="App">
 
-
       <Routes>
         <Route path='/' element={<HomeView />} />
+        <Route path='/pricing' element={<PricingView />} />
         <Route path='/xD' element={<SamplePageView />} />
 
         <Route

@@ -402,3 +402,12 @@ chatMessage._id {
 .message-title {
   margin-top: 10vh;
 }
+
+.marker {
+  font-size: 7px;
+}
+
+.advantages-list{
+  list-style:square;
+  text-align: left;
+}

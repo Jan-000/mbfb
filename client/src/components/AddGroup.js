@@ -38,7 +38,7 @@ export default function AddGroup(props) {
 	return (
 		<>
 			<h1>Add your own ride</h1>
-			<p>marker to recognize addgroup.js component</p>
+			<p class="marker">marker to recognize addgroup.js component</p>
 			<form onSubmit={handleSubmit} className='add-ride'>
 				
 				<label htmlFor="startStation">From: </label>

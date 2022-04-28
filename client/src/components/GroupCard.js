@@ -19,7 +19,7 @@ export default function GroupCard({ _id, startStation, endStation, numOfGuests, 
 					<img alt = 'status' src = {`/${numOfGuests}.png`}/>
 				</div>
 			</Link>
-			<p>marker for GroupCard component</p>
+			<p class="marker">marker for GroupCard component</p>
 		</div>
 
 	)

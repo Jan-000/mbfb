@@ -13,6 +13,9 @@ export default function Navbar() {
 			<Link to="/">
 				<button className="btn">Home</button>
 			</Link>
+			<Link to="/pricing">
+				<button className="btn">Prices</button>
+			</Link>
 
 			{isLoggedIn ? (
 				<>

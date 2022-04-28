@@ -111,7 +111,7 @@ export default function SearchGroup(props) {
           value={ownerEmail}
           onChange={(e) => setOwnerEmail(e.target.value)}
         />
-        <p>marker for SearchGroup.js</p>
+        <p class="marker">marker for SearchGroup.js</p>
 
 
       </div>
@@ -138,7 +138,7 @@ export default function SearchGroup(props) {
                     {group?.ownerName&& <> {group.ownerName}</>}</a>
                     
 
-              </div><p>marker for anotherSearchGroup.js</p>
+              </div><p class="marker">marker for anotherSearchGroup.js</p>
             </>
           );
         })}
