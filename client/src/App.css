@@ -5,7 +5,7 @@
 /* ENTIRE WEBPAPP */
 .App {
   margin: 0% 10%;
-  padding: 15vh 50px 30vh 50px;
+  padding: 50px 50px 50px 50px;
   background-color: rgba(228, 228, 228, 0.74);
   font: 18px;
   font-weight: bold;
@@ -33,14 +33,14 @@ html {
 
 h3 {
   font-weight: 1500;
-  font-size: larger;
+
 
 }
 
 input {
   border: none;
 border-radius: 2px;
-margin: 5px;
+margin: 3px;
 padding: 3px;
 }
 
@@ -89,7 +89,7 @@ touch-action: manipulation;
 white-space: nowrap;
 cursor: pointer;
 transition: transform .75s ease-in-out;
-margin:  5px;
+margin:  3px;
 display: flex;
 -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
@@ -119,6 +119,8 @@ a {
   padding: 1.5vh;
 }
 
+
+
 #brand-logo {
 height: 2.5em;
 display: flex;
@@ -145,7 +147,7 @@ left:4%;
   .go-to-search {
     display: flex;
     justify-content: center;
-    margin: 5% 0;
+    margin: 4% 0;
     padding: 20px;
     align-items: center;
     overflow: hidden;
@@ -162,16 +164,16 @@ left:4%;
 .home-view h2 {
   
   border-radius: 5px;
-  padding: 5px;
+  padding: 2px;
   width: 40%;
   margin-left: 30%;
   margin-right: 30%;
 }
 
 .home-view  h3 {
-  padding: 3px;
+  padding: 2px;
   width: 20%;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: 40%;
   margin-right: 40%;
   background-image: linear-gradient(90deg,#ffffff00 0%, #00318b7e 20% 80%, #ffffff00) ;
@@ -181,7 +183,7 @@ left:4%;
   
 border-radius: 10px;
 padding: 1px 0 0 0;
-margin-bottom: 30px;
+margin-bottom: 10px;
 }
 
 .home-view p {
@@ -217,7 +219,7 @@ margin: 0 0px 0 20px;
 }
 
 .spacer-editpage {
-  margin: 5vh;
+  margin: 3vh;
 }
 
  .btn-editpage {
@@ -245,8 +247,8 @@ margin: 0 0px 0 20px;
 
 border-radius: 10px;
 border-color: black;
-margin: 10px;
-padding: 10px;
+margin: 2px;
+padding: 2px;
 background-color: rgb(201, 201, 201);
 }
 
@@ -270,8 +272,8 @@ width: 100px;
 .created-groups {
   background-color: rgb(207, 211, 216);
   border-radius: 4px;
-  padding: 2em;
-  margin-bottom: 2em;
+  padding: 1em;
+  margin-bottom: 1em;
 
   align-items: center;
 }
@@ -288,7 +290,7 @@ width: 100px;
 .joined-groups {
   background-color: rgb(215, 211, 207);
   border-radius: 4px;
-  padding: 2em;
+  padding: 1em;
 
 }
 .joined-groups h3 {
@@ -310,23 +312,37 @@ width: 100px;
 /* SEARCH GROUP */
 
 .search-train {
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 .from,
 .to:not(.end) {
   background-color: darkgray;
   position: relative;
-  left: 25%;
-  width: 200px;
+  left: 5%;
+  width: 180px;
   border-radius: 2px;
   padding: 2px;
+  margin: 2px;
 
 }
+
+.from2 {
+  background-color: darkgray;
+  color:lightgray;
+  position: relative;
+  left: 5%;
+  width: 180px;
+  border-radius: 2px;
+  padding: 2px;
+  margin: 2px;
+
+}
+
+
 .start,
 .end {
-  /* display: flex;
-  justify-content: center; */
+
   color: #000000;
   font-size: 15px;
 
@@ -336,9 +352,9 @@ width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15%;
-  height: 400%;
-  padding: 10px;
+  margin-bottom: 5%;
+  height: 40%;
+  padding: 2px;
   background-color: grey;
   border-radius: 5px;
   font-size: 10px;
@@ -347,29 +363,12 @@ width: 100px;
 
 .search-dyn-element > a {
  display: flex;
- justify-content: space-around;
- /* align-items: flex-start; */
 background-color: lightgrey;
-margin: 5px;
-}
-.element-stations {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-right: 40%;
 
-
+justify-content: center;
+margin: 3px;
 }
-.element-stations > .from,
-.element-stations > .to {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  color: grey;
-  margin-left: 30%;
-} 
+
 
 /* GROUP DETAILS */
 
@@ -391,10 +390,10 @@ width: 20%;
 /* GROUP DETAILS */
 
 .group-details {
-  padding: 10px;
+  padding: 2px;
   background-color: lightgrey;
   border-radius: 10px;
-  margin: 3vh;
+  margin: 2vh;
 }
 chatMessage._id {
   background-image: linear-gradient(90deg, #004d8b7e 10%, #004c8b1c) ;
@@ -411,3 +410,8 @@ chatMessage._id {
   list-style:square;
   text-align: left;
 }
+
+.h2{
+  font-size:10px
+}
+
