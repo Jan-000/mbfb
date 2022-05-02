@@ -1,8 +1,5 @@
 const Group = require("../models/Group");
 const Chat = require("../models/Chat");
-
-
-
 const router = require("express").Router();
 
 // get all the groups
@@ -120,7 +117,7 @@ router.post('/initialiseMessage', (req, res, next) => {
  
   const message="Welcome to the message board of this group!"
   const author="System"
-  const messages={message, author}
+  const messages={message, author, prp}
   const groupID=req.body.id
   Chat.create({messages, groupID})
     .then(message=>{
@@ -136,7 +133,6 @@ router.post('/initialiseMessage', (req, res, next) => {
     })
     .catch(err => next(err))
     
-
 })
 
 
@@ -144,7 +140,7 @@ router.post('/addMessage', (req, res, next) => {
   console.log('addmessage starting')
   
   const filter= {groupID: req.body.id}
-  const objPush= {message: req.body.message, author: req.body.author}
+  const objPush= {message: req.body.message, author: req.body.author, prp: req.body.prp}
   const update = { $push: { messages: objPush }}
   
   Chat.findOneAndUpdate(filter, update, {new:true})

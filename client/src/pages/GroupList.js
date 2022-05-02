@@ -51,7 +51,7 @@ const drol = () => {if (ownedGroups=="")
   return (
     <>
       <div className="created-groups">
-        <h3>Groups you, {user.name}, created</h3>
+        <h3>Groups you, {user.name}, created</h3><br></br><br></br>
 		
 		{drol()}
 

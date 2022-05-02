@@ -8,6 +8,7 @@ const chatSchema = new Schema(
         messages : [{
             message: String,
             author: String,
+            prp: String,
         }], 
         groupID: {
             type: Schema.Types.ObjectId,

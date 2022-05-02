@@ -244,13 +244,14 @@ margin: 0 0px 0 20px;
 }
 
 .group-card-bgr {
-
-border-radius: 10px;
-border-color: black;
-margin: 2px;
-padding: 2px;
-background-color: rgb(201, 201, 201);
-}
+  border-radius: 10px;
+  border-color: black;
+  margin: 2px;
+  padding: 2px;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;}
 
 .group-bar img{
 
@@ -270,17 +271,19 @@ width: 100px;
 }
 
 .created-groups {
+  display: flex;
+  justify-content: center;
   background-color: rgb(207, 211, 216);
   border-radius: 4px;
   padding: 1em;
   margin-bottom: 1em;
-
-  align-items: center;
+  flex-direction: column;
 }
 
 .created-groups h3 {
+  
   position: relative;
-  top:-30px;
+
   font-size: 1.5em;
   background: darkgrey;
   border-radius: 2px
@@ -319,7 +322,7 @@ width: 100px;
 .to:not(.end) {
   background-color: darkgray;
   position: relative;
-  left: 5%;
+
   width: 180px;
   border-radius: 2px;
   padding: 2px;
@@ -331,7 +334,7 @@ width: 100px;
   background-color: darkgray;
   color:lightgray;
   position: relative;
-  left: 5%;
+
   width: 180px;
   border-radius: 2px;
   padding: 2px;

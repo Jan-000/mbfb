@@ -11,6 +11,7 @@ export default function GroupDetails() {
   const [group, setGroup] = useState(null);
   const [message, setMessage] = useState("");
   const [chat, setChat] = useState(null);
+  const [prp, setPrp] = useState("yo")
 
   const storedToken = localStorage.getItem("authToken");
   const { user } = useContext(AuthContext);
@@ -90,18 +91,23 @@ export default function GroupDetails() {
     axios
       .post(
         "/api/groups/addMessage",
-        { message, author, id },
+        { message, author, id, prp },
         { headers: { Authorization: `Bearer ${storedToken}` } }
       )
       .then((response) => {
         setMessage("");
         setChat(response.data);
+        setPrp("xD");
       })
       .catch((err) => console.log(err));
   };
 
   const handleMessage = (e) => {
     setMessage(e.target.value);
+  };
+
+  const handlePrp = (e) => {
+    setPrp(e.target.att);
   };
 
   const getChat = () => {
@@ -193,8 +199,10 @@ export default function GroupDetails() {
               <label htmlFor="message">Your message</label>
               <br></br>
               <textarea
+                att={prp}
                 value={message}
                 onChange={handleMessage}
+                omChange = {handlePrp}
                 id="message"
                 name="message"
                 rows="4"
