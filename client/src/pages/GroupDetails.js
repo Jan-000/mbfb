@@ -11,7 +11,7 @@ export default function GroupDetails() {
   const [group, setGroup] = useState(null);
   const [message, setMessage] = useState("");
   const [chat, setChat] = useState(null);
-  const [prp, setPrp] = useState("yo")
+  const [prp, setPrp] = useState("XD")
 
   const storedToken = localStorage.getItem("authToken");
   const { user } = useContext(AuthContext);

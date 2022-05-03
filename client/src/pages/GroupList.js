@@ -45,7 +45,7 @@ export default function GroupList() {
     getAllGroups();
   }, []);
 
-const drol = () => {if (ownedGroups=="")
+const toRename = () => {if (ownedGroups=="")
 	return "none so far"}
 
   return (
@@ -53,10 +53,7 @@ const drol = () => {if (ownedGroups=="")
       <div className="created-groups">
         <h3>Groups you, {user.name}, created</h3><br></br><br></br>
 		
-		{drol()}
-
-
-
+		{toRename()}
 
         {
 			ownedGroups.map((group) => (
