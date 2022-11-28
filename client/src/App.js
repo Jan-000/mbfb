@@ -14,12 +14,7 @@ import HomeView from './components/HomeView'
 import SamplePageView from './components/SamplePageView';
 import PricingView from './components/PricingView';
 
-
-
 import SearchGroup from './components/SearchGroup';
-
-
-
 import UserProfileEdit from './components/UserProfileEdit';
 import LoggedUserInfo from './components/LoggedUserInfo';
 
