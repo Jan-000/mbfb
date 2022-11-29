@@ -21,7 +21,7 @@ export default function PricingView() {
             
            
             <article>
-                <h2>So take a seat and let's have a ride.</h2>
+                <h2>So take a seat annd let's have a ride.</h2>
                 <figure>
                     <img width="50%" alt="yea" src="train.gif"></img>
 

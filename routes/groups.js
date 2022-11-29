@@ -115,6 +115,7 @@ const id = req.params.id;
 
 router.post('/initialiseMessage', (req, res, next) => {
  
+  console.log("waa")
   const message="Welcome to the message board of this group!"
   const author="System"
   const messages={message, author, prp}
