@@ -12,7 +12,7 @@ export default function Home() {
 
 
 	return (
-	<> {user ?  <p>You logged as email:<b>  {user.email}</b> and name:<b> {user.name}</b><br></br>This is deployment #44 <br></br> Education purpose only.
+	<> {user ?  <p>You logged as email:<b>  {user.email}</b> and name:<b> {user.name}</b><br></br>This is deployment #44 <br></br> Educatioqewqwqwen purpose only.
 		</p> : <p>You are not logged in.</p>
 		}
 		</>
