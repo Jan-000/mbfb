@@ -39,6 +39,7 @@ router.post('/', (req, res, next) => {
 
 // get a specific group
 router.get('/:id', (req, res, next) => {
+  console.log("qwewqe")
   Group.findById(req.params.id)
     .populate("guests")
     .then(group => {
