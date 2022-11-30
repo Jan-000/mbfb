@@ -7,6 +7,7 @@ export default function SamplePageView() {
         <SamplePage />
         <article>
             
+           
         Bake
 
         </article>

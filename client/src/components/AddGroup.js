@@ -23,7 +23,7 @@ export default function AddGroup(props) {
 
 			.then(response => {
 				console.log(response)
-				console.log('ttest');
+				console.log('test');
 			})
 			.catch(err => console.log(err))
 		// reset the form
